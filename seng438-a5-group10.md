@@ -56,14 +56,25 @@ In order to create a Reliability Demonstration Chart, we used Dataset 1 and used
 *Figure 7: Reliability Demonstation Chart with Default MTTF*
 ![Alt text](/media/rdcorig.jpg?raw=true "RDC Default MTTF")
 
+This RDC has a MTTF of the default value provided by the program. With this value the test data passes the reliability tests and do not need to be tested further.
+
+
 *Figure 8: Reliability Demonstation Chart with Minimum MTTF*
 ![Alt text](/media/rdcmin.jpg?raw=true "RDC Min MTTF")
+
+This RDC has a MTTF of the minimum value that is accepted. This was found by looking at the line of acceptance, then dividing the failure number by the corresponding normalized measure. In our case this was *1/2.8*, leading to .36 failures per second.
+
 
 *Figure 9: Reliability Demonstation Chart with Half the Minimum MTTF*
 ![Alt text](/media/rdchalf.jpg?raw=true "RDC Half MTTF")
 
+This RDC has a MTTF of half the minimum value found. This causes the data to need to continue testing, as the failure data is betwee the *accept* and *reject* lines. We found the failures per second to use by halving the minimum MTTF, leading to a calculation of *1/(2.8/2)*.
+
+
 *Figure 10: Reliability Demonstation Chart with Double the Minimum MTTF*
 ![Alt text](/media/rdcdouble.jpg?raw=true "RDC Double MTTF")
+
+This RDC has a MTTF of double the minimum value found. This causes the data to still be accepted, as the failure data is past the *accept* line. We found the failures per second to use by doubling the minimum MTTF, leading to a calculation of *1/(2⋅2.8)*.
 
 # Comparison of Results<a name="par3"></a>
 
