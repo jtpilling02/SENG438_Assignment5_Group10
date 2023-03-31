@@ -21,14 +21,14 @@
 
 
 # Introduction<a name="introduction"></a>
-In this lab, we explored and analyzed integration test data using different reliability assessment tools. More specifically, we looked at Reliability Growth Testing (RGT) and Reliability Demonstration Charts (RDC).Using these two methods, we analyzed the resulting graphs/data from various datasets.Our RGT analysis looked at algorithms such as Geometric and Littlewood and Varral’s Bayesian Reliability. Our RDC analysis looked at failure intensity objectives.
+In this lab, we explored and analyzed integration test data using different reliability assessment tools. More specifically, we looked at Reliability Growth Testing (RGT) and Reliability Demonstration Charts (RDC). Using these two methods, we analyzed the resulting graphs/data from various datasets. Our RGT analysis looked at algorithms such as Geometric and Littlewood and Varral’s Bayesian Reliability. Our RDC analysis looked at failure intensity objectives.
 
 # Assessment Using Reliability Growth Testing<a name="par1"></a>
 
 In order to perform Reliability Growth Testing, we used Dataset 1, and used the Geometric and Littlewood and Varral's Bayesian Reliability models to test the dataset twice.
-All of the reliability growth testing was performed on `RSTAT`.
+All of the reliability growth testing was performed on `SRTAT`.
 
-*Figure 1-3* show our results when using the Geometric Model.
+*Figures 1-3* below shows our results when using the Geometric Model.
 
 *Figure 1: Geometric Model Result on Dataset 1*
 
@@ -42,7 +42,7 @@ All of the reliability growth testing was performed on `RSTAT`.
 
 ![Alt text](/media/geoprediction.png?raw=true "Geometric Prediction")
 
-*Figure 4-6* show our results when using the Littlewood and Varral's Bayesian Reliability Model.
+*Figures 4-6* below shows our results when using the Littlewood and Varral's Bayesian Reliability Model.
 
 *Figure 4: Littlewood and Varral's Bayesian Reliability Model Result on Dataset 1*
 
@@ -57,7 +57,7 @@ All of the reliability growth testing was performed on `RSTAT`.
 ![Alt text](/media/lvprediction.png?raw=true "Littlewood and Varral's Bayesian Reliability Prediction")
 
 # Assessment Using Reliability Demonstration Chart<a name="par2"></a> 
-In order to create a Reliability Demonstration Chart, we used Dataset 1 and used `RSTAT` to create the model.
+In order to create a Reliability Demonstration Chart, we used Dataset 1 and used `SRTAT` to create the model.
 
 *Figure 7: Reliability Demonstation Chart with Default MTTF*
 
