@@ -70,21 +70,21 @@ This RDC has a MTTF of the default value provided by the program. With this valu
 
 ![Alt text](/media/rdcmin.png?raw=true "RDC Min MTTF")
 
-This RDC has a MTTF of the minimum value that is accepted. This was found by looking at the line of acceptance, then dividing the failure number by the corresponding normalized measure. In our case this was *1/2.8*, leading to .36 failures per second.
+This RDC has a MTTF of the minimum value that is accepted. To find the failures per second to use to get the minimum MTTF, we first divided the normalized measure by the failure time, then since `normalized measure=failure time*failure/s` and `normalized measure=failure time/MTTF` we can find the MTTF by finding the inverse of  failure time. In our case this was *2.88/8*, leading to .36 failures per second, and a MTTF of 2.8.
 
 
 *Figure 9: Reliability Demonstation Chart with Half the Minimum MTTF*
 
 ![Alt text](/media/rdchalf.png?raw=true "RDC Half MTTF")
 
-This RDC has a MTTF of half the minimum value found. This causes the data to need to continue testing, as the failure data is betwee the *accept* and *reject* lines. We found the failures per second to use by halving the minimum MTTF, leading to a calculation of *1/(2.8/2)*.
+This RDC has a MTTF of half the minimum value found. This causes the data to need to continue testing, as the failure data is betwee the *accept* and *reject* lines. We found the failures per second to use by halving the minimum MTTF.
 
 
 *Figure 10: Reliability Demonstation Chart with Double the Minimum MTTF*
 
 ![Alt text](/media/rdcdouble.png?raw=true "RDC Double MTTF")
 
-This RDC has a MTTF of double the minimum value found. This causes the data to still be accepted, as the failure data is past the *accept* line. We found the failures per second to use by doubling the minimum MTTF, leading to a calculation of *1/(2⋅2.8)*.
+This RDC has a MTTF of double the minimum value found. This causes the data to still be accepted, as the failure data is past the *accept* line. We found the failures per second to use by doubling the minimum MTTF.
 
 # Comparison of Results<a name="par3"></a>
 
