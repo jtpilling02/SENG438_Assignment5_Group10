@@ -31,47 +31,57 @@ All of the reliability growth testing was performed on `RSTAT`.
 *Figure 1-3* show our results when using the Geometric Model.
 
 *Figure 1: Geometric Model Result on Dataset 1*
+
 ![Alt text](/media/geomodel.png?raw=true "Geometric Model Result")
 
 *Figure 2: Geometric Analysis on Dataset 1*
+
 ![Alt text](/media/geoanalysis.png?raw=true "Geometric Analysis")
 
 *Figure 3: Geometric Prediction on Dataset 1*
+
 ![Alt text](/media/geoprediction.png?raw=true "Geometric Prediction")
 
 *Figure 4-6* show our results when using the Littlewood and Varral's Bayesian Reliability Model.
 
 *Figure 4: Littlewood and Varral's Bayesian Reliability Model Result on Dataset 1*
+
 ![Alt text](/media/lvmodel.png?raw=true "Littlewood and Varral's Bayesian Reliability Model Result")
 
 *Figure 5: Littlewood and Varral's Bayesian Reliability Analysis on Dataset 1*
+
 ![Alt text](/media/lvanalysis.png?raw=true "Littlewood and Varral's Bayesian Reliability Analysis")
 
 *Figure 6: Littlewood and Varral's Bayesian Reliability Prediction on Dataset 1*
+
 ![Alt text](/media/lvprediction.png?raw=true "Littlewood and Varral's Bayesian Reliability Prediction")
 
 # Assessment Using Reliability Demonstration Chart<a name="par2"></a> 
 In order to create a Reliability Demonstration Chart, we used Dataset 1 and used `RSTAT` to create the model.
 
 *Figure 7: Reliability Demonstation Chart with Default MTTF*
-![Alt text](/media/rdcorig.jpg?raw=true "RDC Default MTTF")
+
+![Alt text](/media/rdcorig.png?raw=true "RDC Default MTTF")
 
 This RDC has a MTTF of the default value provided by the program. With this value the test data passes the reliability tests and do not need to be tested further.
 
 
 *Figure 8: Reliability Demonstation Chart with Minimum MTTF*
+
 ![Alt text](/media/rdcmin.png?raw=true "RDC Min MTTF")
 
 This RDC has a MTTF of the minimum value that is accepted. This was found by looking at the line of acceptance, then dividing the failure number by the corresponding normalized measure. In our case this was *1/2.8*, leading to .36 failures per second.
 
 
 *Figure 9: Reliability Demonstation Chart with Half the Minimum MTTF*
+
 ![Alt text](/media/rdchalf.png?raw=true "RDC Half MTTF")
 
 This RDC has a MTTF of half the minimum value found. This causes the data to need to continue testing, as the failure data is betwee the *accept* and *reject* lines. We found the failures per second to use by halving the minimum MTTF, leading to a calculation of *1/(2.8/2)*.
 
 
 *Figure 10: Reliability Demonstation Chart with Double the Minimum MTTF*
+
 ![Alt text](/media/rdcdouble.png?raw=true "RDC Double MTTF")
 
 This RDC has a MTTF of double the minimum value found. This causes the data to still be accepted, as the failure data is past the *accept* line. We found the failures per second to use by doubling the minimum MTTF, leading to a calculation of *1/(2⋅2.8)*.
